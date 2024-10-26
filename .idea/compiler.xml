@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="POC_END_TO_END" />
+        <module name="GOOGLE_SEARCH" />
       </profile>
     </annotationProcessing>
   </component>

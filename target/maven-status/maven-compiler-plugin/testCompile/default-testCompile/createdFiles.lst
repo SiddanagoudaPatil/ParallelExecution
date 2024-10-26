@@ -1,4 +1,5 @@
-cucumberOptions\TestNgRunner.class
-stepDefinitions\MainSteps.class
-Utility\Waits.class
-Utility\WebDriverFactory.class
+pages\Google.class
+config\Browser.class
+runner\TestRunner.class
+stepDefinitions\Search.class
+Utility\Reusable.class

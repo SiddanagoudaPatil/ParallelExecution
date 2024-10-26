@@ -1,4 +1,5 @@
-C:\Users\siddu\OneDrive\Desktop\APPIUM APPS\POC_END_TO_END\src\test\java\cucumberOptions\TestNgRunner.java
-C:\Users\siddu\OneDrive\Desktop\APPIUM APPS\POC_END_TO_END\src\test\java\stepDefinitions\MainSteps.java
-C:\Users\siddu\OneDrive\Desktop\APPIUM APPS\POC_END_TO_END\src\test\java\Utility\Waits.java
-C:\Users\siddu\OneDrive\Desktop\APPIUM APPS\POC_END_TO_END\src\test\java\Utility\WebDriverFactory.java
+C:\Practice\Java\Google-Search\src\test\java\config\Browser.java
+C:\Practice\Java\Google-Search\src\test\java\pages\Google.java
+C:\Practice\Java\Google-Search\src\test\java\runner\TestRunner.java
+C:\Practice\Java\Google-Search\src\test\java\utility\Reusable.java
+C:\Practice\Java\Google-Search\src\test\java\stepDefinitions\Search.java

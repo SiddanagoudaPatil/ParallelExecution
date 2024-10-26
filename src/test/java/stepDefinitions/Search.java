@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 import pages.Google;
+import utility.Reusable;
 
 public class Search {
 
@@ -30,6 +31,7 @@ public class Search {
 
 	@Then("user get the results displayed within {int} milliseconds")
 	public void userGetTheResultsDisplayedWithin1Second(int timeUnit) {
+		google.getResults(timeUnit);
 		endTime = System.currentTimeMillis();
 		elapsedTime = endTime - startTime;
 		Assert.assertTrue(elapsedTime <= timeUnit);

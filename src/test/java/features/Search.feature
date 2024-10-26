@@ -10,5 +10,5 @@ Feature: Google Search
 
     Examples:
     | timeUnit |
-    | 1000     |
-    | 750      |
+    | 2000     |
+    | 3000     |

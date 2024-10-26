@@ -8,9 +8,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Browser {
 
-	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	final private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-	public static WebDriver getDriver(String browser) {
+	public static void getDriver(String browser) {
 		if (driver.get() == null) {
 			if (browser.equalsIgnoreCase("chrome")) {
 				WebDriverManager.chromedriver().setup();
@@ -25,7 +25,6 @@ public class Browser {
 				throw new IllegalArgumentException("Unsupported browser: " + browser);
 			}
 		}
-		return driver.get();
 	}
 
 	public static WebDriver getDriverInstance() {

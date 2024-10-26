@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.615 s <<< FAILURE! - in TestSuite
-runner.TestRunner.runScenario["Display results", "Google Search"](1)  Time elapsed: 0.037 s  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.451 s <<< FAILURE! - in TestSuite
+runner.TestRunner.runScenario["Display results", "Google Search"](2)  Time elapsed: 3.861 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 

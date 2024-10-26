@@ -15,7 +15,7 @@ import org.testng.annotations.Parameters;
 			"pretty",
 			"html:target/cucumber-reports.html"
 	},
-	tags = ""
+	tags = "@search"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 	@Parameters("browser")

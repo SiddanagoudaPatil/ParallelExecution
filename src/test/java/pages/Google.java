@@ -9,10 +9,10 @@ import utility.Reusable;
 import java.util.List;
 
 public class Google {
-	private WebDriver driver;
-	private String url = "https://www.google.com";
-	private By searchInput = By.name("q");
-	private By results = By.cssSelector("#search > div > div > div:last-child");
+	final private WebDriver driver;
+	final private String url = "https://www.google.com";
+	final private By searchInput = By.name("q");
+	final private By results = By.cssSelector("#search > div > div > div:last-child");
 
 	public Google(WebDriver driver) {
 		this.driver = driver;
@@ -28,9 +28,5 @@ public class Google {
 
 	public void pressReturnKey() {
 		driver.findElement(searchInput).sendKeys(Keys.RETURN);
-	}
-
-	public List<WebElement> getResults(int timeUnit) {
-		return Reusable.waitAndGetListOfElements(driver, results, timeUnit);
 	}
 }

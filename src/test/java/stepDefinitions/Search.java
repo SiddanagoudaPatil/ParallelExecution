@@ -9,8 +9,8 @@ import pages.Google;
 
 public class Search {
 
-	private Google google = new Google(Browser.getDriverInstance());
-	long startTime, endTime, elapsedTime;
+	final private Google google = new Google(Browser.getDriverInstance());
+	private long startTime, endTime, elapsedTime;
 
 	@Given("user is on the google page")
 	public void userIsOnTheGooglePage() {

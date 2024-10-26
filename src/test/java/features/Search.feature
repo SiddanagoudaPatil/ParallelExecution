@@ -1,6 +1,7 @@
 Feature: Google Search
   Validate results within various parameters
 
+  @search
   Scenario Outline: Display results
     Given user is on the google page
     When  user enters "Selenium Webdriver" into search text field

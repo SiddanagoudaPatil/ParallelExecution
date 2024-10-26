@@ -12,7 +12,7 @@ import java.util.List;
 public class Reusable {
 
 	private static WebDriverWait wait;
-	private static int seconds = 30;
+	final private static int seconds = 30;
 
 	public static void waitClearAndSendKeys(WebDriver driver, By locator, String text) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
@@ -24,9 +24,9 @@ public class Reusable {
 	public static List<WebElement> waitAndGetListOfElements(WebDriver driver, By locator, int timeUnit) {
 		List<WebElement> list = null;
 		try {
-			wait = new WebDriverWait(driver, Duration.ofMillis((long)timeUnit));
+			wait = new WebDriverWait(driver, Duration.ofMillis(timeUnit));
 			list = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
-		} catch (Exception e) { }
+		} catch (Exception e) { System.out.println("Exception"); }
 
 		return list;
 	}

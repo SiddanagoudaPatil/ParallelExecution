@@ -1,9 +1,15 @@
 #Feature file for validating the 1st element in the google which loads at 1 second
 
-Feature: Google page
+Feature: Google Search  Validating whether results are displayed within 1 second or not
 
   @BasicTest
-  Scenario: element loading at 1 second
-    Given User is on the google homepage with browser
-    When User lands on the google homepage
-    Then User should get the list of elements which are loaded in One second
+  Scenario Outline: Display results
+    Given user is on the google page
+    When  user enters "Selenium Webdriver" into search text field
+    And   user press the return key
+    Then  user get the results displayed within <timeUnit> milliseconds
+
+    Examples:
+      | timeUnit |
+      | 2000     |
+      | 3000     |
